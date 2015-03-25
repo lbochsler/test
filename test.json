@@ -1,0 +1,28 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://zürichmarathon.ch/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//map[@id='Map']/area[3]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "13. Zürich Marathon 19. April 2015"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
